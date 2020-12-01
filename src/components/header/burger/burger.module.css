@@ -1,0 +1,37 @@
+.test {
+    padding: 10px 0;
+    cursor: pointer;
+}
+.test:hover .header__menu::after, .test:hover .header__menu::before {
+    
+    width: 25px;
+}
+.header__menu {
+    width: 25px;
+    height: 3px;
+    position: relative;
+    background: rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.header__menu::after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 6px;
+    background: rgb(92, 92, 92);
+    border-radius: 3px;
+    transition: width 0.2s ease-in 0.2s;
+
+}
+.header__menu::before {
+    content: '';
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    top: -6px;
+    background: rgb(92, 92, 92);
+    border-radius: 3px;
+    transition: width 0.2s ease-in 0.2s;
+
+}
